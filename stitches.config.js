@@ -15,7 +15,8 @@ export const {
     colors: {
       gray400: "gainsboro",
       gray500: "lightgray",
-      aquaWhite: "#F7F7F7",
+      aquaWhite: "#F5F5F5",
+      aquaGrey: "#E8E2E2",
       blue400: "#6278F7",
       programacao: "#57C278",
       frontEnd: "#82CFFA",
@@ -30,6 +31,7 @@ export const {
       Poppins: '"Poppins", "sans-serif"',
       Inter: '"Inter", "sans-serif";',
       Roboto: '"Roboto", "sans-serif"',
+      Noto: "'Noto Serif Ahom', 'serif'",
     },
   },
   media: {

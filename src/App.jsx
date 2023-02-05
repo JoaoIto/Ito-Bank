@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import './App.css'
+import { Header } from './components/Header/index.jsx'
 
 function App() {
 
   return (
     <div className="App">
+      <Header />
       <h1>Hello World!</h1>
     </div>
   )
