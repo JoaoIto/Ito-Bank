@@ -18,6 +18,8 @@ export function Header(){
             <Desc>O banco para você enriquecer!</Desc>
           </Texts>
         </Nav>
+
+        
       </Background>
     );
 }
@@ -32,6 +34,7 @@ const Background = styled("header", {
 const Nav = styled("nav", {
     display: 'flex',
     justifyContent: 'space-around',
+    alignItems: 'center',
     height: "10%",
     width: "100%",
     backgroundColor: "$blue400",
@@ -47,18 +50,23 @@ const MenuHam = styled('button', {
 const Texts = styled('div', {
     display: 'flex', 
     flexDirection: 'column', 
-    height: '90%'
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%'
 });
 
 const Title = styled("h2", {
     fontSize: '2.5rem',
     fontFamily: '$Noto',
+    fontWeight: 'bold',
     color: '$aquaGrey',
-    margin: '0'
+    textShadow: '3px 3px 3px #6342f7'
 });
 
 const Desc = styled("span", {
-  fontSize: "1.5rem",
+  fontSize: "1.8rem",
   fontFamily: "$Noto",
+  fontWeight: "bold",
   color: "$aquaGrey",
+  textShadow: "3px 3px 3px #6342f7",
 });
