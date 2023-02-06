@@ -15,16 +15,12 @@ export const {
     colors: {
       gray400: "gainsboro",
       gray500: "lightgray",
+      lightGrey: "#E9E8E8",
+      darkGrey: "#434242",
+      lightBlack: "#20262E",
       aquaWhite: "#F5F5F5",
       aquaGrey: "#E8E2E2",
       blue400: "#6278F7",
-      programacao: "#57C278",
-      frontEnd: "#82CFFA",
-      dataScience: "#A6D157",
-      devops: "#E06B69",
-      ux: "#DB6EBF",
-      mobile: "#FFBA05",
-      inovacao: "#FF8A29",
     },
 
     fonts: {

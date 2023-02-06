@@ -22,9 +22,11 @@ export function Header() {
         <img height="500" src="../../../src/assets/imgs/home.svg" alt="" />
         <Flan>
             <Legend>
-                Nós somos a solução!
+                Nós somos a solução...
             </Legend>
-
+            <Span>
+                Para você que pretende sair do zero para o milhão, venha com a gente!
+            </Span>
             <Invest>
                 Investir Agora!
             </Invest>
@@ -89,7 +91,7 @@ const Cover = styled('div', {
 });
 
 const Flan = styled('div', {
-    height: '20%',
+    height: '25%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -98,10 +100,20 @@ const Flan = styled('div', {
 });
 
 const Legend = styled('legend', {
-    fontSize: '3.2rem',
-    fontFamily: '$Poppins'
+  fontSize: "3.2rem",
+  fontFamily: "$Poppins",
+  fontWeight: "bold",
+  color: "$lightBlack",
+  textShadow: "2px 2px 2px #584dff",
 });
 
+const Span = styled("span", {
+  width: '70%',
+  fontSize: '1.4rem',
+  fontFamily: "$Poppins",
+  fontWeight: '700',
+  color: '$darkGrey'
+});
 const Invest = styled('button', {
     fontSize: '1.6rem',
     fontFamily: '$Poppins',
