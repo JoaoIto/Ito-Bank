@@ -37,9 +37,12 @@ export function Header() {
 }
 
 const Background = styled("header", {
+  display: "flex",
+  flexDirection: "column",
   height: "90vh",
   width: "100vw",
   backgroundColor: "$aquaWhite",
+  boxShadow: "8px 8px 8px #cacaca",
 });
 
 const Nav = styled("nav", {
@@ -49,8 +52,7 @@ const Nav = styled("nav", {
   height: "10%",
   width: "100%",
   backgroundColor: "$blue400",
-  margin: "0",
-  padding: "30px",
+  padding: '30px 0'
 });
 
 const MenuHam = styled("button", {
