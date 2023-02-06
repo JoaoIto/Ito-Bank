@@ -1,4 +1,3 @@
-import { border } from "@mui/system";
 import { styled } from "../../../stitches.config";
 
 export function Header() {
@@ -19,7 +18,7 @@ export function Header() {
         </Texts>
       </Nav>
       <Cover>
-        <img height="500" src="../../../src/assets/imgs/home.svg" alt="" />
+        <img width="40%" height="500" src="../../../src/assets/imgs/home.svg" alt="" />
         <Flan>
             <Legend>
                 Nós somos a solução...
@@ -43,6 +42,7 @@ const Background = styled("header", {
   width: "100vw",
   backgroundColor: "$aquaWhite",
   boxShadow: "8px 8px 8px #cacaca",
+  marginBottom: '20px'
 });
 
 const Nav = styled("nav", {
@@ -93,7 +93,8 @@ const Cover = styled('div', {
 });
 
 const Flan = styled('div', {
-    height: '25%',
+    height: '50%',
+    width: '50%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
