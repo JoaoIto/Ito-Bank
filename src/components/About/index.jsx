@@ -55,7 +55,6 @@ const Span = styled("span", {
   width: "70%",
   fontSize: "1.8rem",
   fontFamily: "$Poppins",
-  fontWeight: "700",
   color: "$darkGrey",
 });
 

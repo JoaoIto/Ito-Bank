@@ -94,16 +94,16 @@ const Cover = styled('div', {
 
 const Flan = styled('div', {
     height: '50%',
-    width: '50%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-evenly',
     padding: '20px',
-    textAlign: 'justify',
+    textAlign: 'center',
 });
 
 const Legend = styled('legend', {
+  width: '80%',
   fontSize: "3.2rem",
   fontFamily: "$Poppins",
   fontWeight: "bold",
@@ -115,7 +115,6 @@ const Span = styled("span", {
   width: '70%',
   fontSize: '1.8rem',
   fontFamily: "$Poppins",
-  fontWeight: '700',
   color: '$darkGrey'
 });
 
