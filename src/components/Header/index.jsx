@@ -15,7 +15,7 @@ export function Header() {
         <Texts>
           <Title>Ito Bank</Title>
           <Desc>O banco para você enriquecer!</Desc>
-        </Texts>
+        </Texts> 
       </Nav>
       <Cover>
         <img width="40%" height="500" src="../../../src/assets/imgs/home.svg" alt="" />
@@ -41,8 +41,8 @@ const Background = styled("header", {
   height: "90vh",
   width: "100vw",
   backgroundColor: "$aquaWhite",
-  boxShadow: "8px 8px 8px #cacaca",
-  marginBottom: '20px'
+  boxShadow: "12px 12px 12px #cacaca",
+  marginBottom: '50px'
 });
 
 const Nav = styled("nav", {
@@ -99,7 +99,8 @@ const Flan = styled('div', {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-evenly',
-    padding: '10px'
+    padding: '20px',
+    textAlign: 'justify',
 });
 
 const Legend = styled('legend', {
@@ -112,11 +113,12 @@ const Legend = styled('legend', {
 
 const Span = styled("span", {
   width: '70%',
-  fontSize: '1.4rem',
+  fontSize: '1.8rem',
   fontFamily: "$Poppins",
   fontWeight: '700',
   color: '$darkGrey'
 });
+
 const Invest = styled('button', {
     fontSize: '1.6rem',
     fontFamily: '$Poppins',
