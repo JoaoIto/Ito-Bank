@@ -24,10 +24,11 @@ const Background = styled('section', {
   display: "flex",
   alignItems: 'center',
   justifyContent: 'space-evenly',
-  height: "70vh",
+  height: "90vh",
   width: "100vw",
   backgroundColor: "$aquaWhite",
   boxShadow: "8px 8px 8px #cacaca",
+  marginBottom: '50px'
 });
 
 const Flan = styled("div", {
