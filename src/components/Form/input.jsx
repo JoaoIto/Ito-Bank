@@ -1,15 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { useField } from "@unform/core";
-import { styled } from "../../../stitches.config";
 
-export const Input = ({ name, ...rest }) => {
-
-  const inputRef = useRef();
-  useEffect(() => {}, []);
-  const { fieldName, defaultValue, registerField } = useField(name);
-  const typing = (event) => {
-    props.onChanges(event.target.value);
-  };
+export function Input({ name, ...rest }) {
+  const inputRef = useRef(null);
+  const { fieldName, defaultValue, registerField, error } = useField(name);
 
   useEffect(() => {
     registerField({
@@ -27,29 +21,5 @@ export const Input = ({ name, ...rest }) => {
     });
   }, [fieldName, registerField]);
 
-  return (
-    <>
-      <Label>{label}</Label>
-      <InputLabel
-        name={name}
-        ref={inputRef}
-        type="text"
-        placeholder="Type your username"
-        {...rest}
-      ></InputLabel>
-    </>
-  );
-};
-
-const Label = styled("label", {
-  fontSize: "2rem",
-  fontFamily: "$Inter",
-  fontWeight: "bold",
-});
-
-const InputLabel = styled("input", {
-  height: "30px",
-  width: "80%",
-  padding: "10px",
-  border: "5px solid rgba(0, 0, 0, 0.3)",
-});
+  return <input ref={inputRef} defaultValue={defaultValue} {...rest} />;
+}
