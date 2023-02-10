@@ -1,7 +1,9 @@
 import React from "react";
 import { styled } from "../../../stitches.config";
 import { Form } from "@unform/web";
-import { Input } from "./input";
+import { InputField } from "./input";
+import { Label } from "./label";
+import style from "./style.css"
 
 export function SignIn() {
   function handleSubmit(data) {
@@ -11,19 +13,17 @@ export function SignIn() {
 
   return (
     <Card>
-      <Form onSubmit={handleSubmit}>
-        <Input
-          label="Insira seu melhor email:"
+      <Form id="form" onSubmit={handleSubmit}>
+        <InputField
           name="email"
           type="email"
-          placeholder="emailexample@email.com"
+          placeholder="emailExample@email.com"
           required
         />
-        <Input
-          label="Insira sua senha:"
+        <InputField
           name="password"
           type="password"
-          placeholder="********"
+          placeholder="**************"
           required
         />
 
@@ -34,16 +34,13 @@ export function SignIn() {
 }
 
 const Card = styled('form', {
-  width: '80%',
+  width: '100%',
   height: '90vh',
   display: 'flex',
+  alignSelf: 'center',
   alignItems: 'center',
   justifyContent: 'space-evenly',
   backgroundColor: '$aquaWhite',
-});
-
-Form = styled('form', {
-  
 });
 
 const Submit = styled("button", {
