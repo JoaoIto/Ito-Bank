@@ -10,8 +10,8 @@ export function SignIn() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Input name="email" type="email" />
-      <Input name="password" type="password" />
+      <Input name="email" type="email" required/>
+      <Input name="password" type="password" required/>
 
       <button type="submit">Sign in</button>
     </Form>
