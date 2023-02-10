@@ -1,47 +1,57 @@
+import React from "react";
 import { styled } from "../../../stitches.config";
-import { Input } from '../Form/input'
+import { Form } from "@unform/web";
+import { InputField } from "./input";
+import { Label } from "./label";
+import style from "./style.css"
 
-export function Form() {
+export function SignIn() {
+  function handleSubmit(data) {
+    console.log(data);
+    // { email: 'test@example.com', password: '123456' }
+  }
+
   return (
-    <Background>
-      <Card>
-        <Title>Cadastre-se: </Title>
-        <Input 
-        type="text"
+    <Card>
+      <Form id="form" onSubmit={handleSubmit}>
+        <InputField
+          name="email"
+          type="email"
+          placeholder="emailExample@email.com"
+          required
         />
-      </Card>
-    </Background>
+        <InputField
+          name="password"
+          type="password"
+          placeholder="**************"
+          required
+        />
+
+        <Submit type="submit">Sign in</Submit>
+      </Form>
+    </Card>
   );
 }
 
-const Background = styled("section", {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-evenly",
-  height: "90vh",
-  width: "100vw",
-  backgroundColor: "$aquaWhite",
-  boxShadow: "8px 8px 8px #cacaca",
-  marginBottom: "50px",
+const Card = styled('form', {
+  width: '100%',
+  height: '90vh',
+  display: 'flex',
+  alignSelf: 'center',
+  alignItems: 'center',
+  justifyContent: 'space-evenly',
+  backgroundColor: '$aquaWhite',
 });
 
-const Card = styled("div", {
-  height: "90%",
-  width: "70%",
-  borderRadius: "10px",
-  boxShadow: "-8px 8px 8px 8px #6278F7",
-  border: "5px solid #96a5fd",
-  display: "flex",
-  flexDirection: 'column',
-  alignItems: "center",
-  justifyContent: "space-evenly",
-  backgroundColor: "#fff",
-});
-
-const Title = styled("h2", {
-  fontSize: "2.7rem",
+const Submit = styled("button", {
+  fontSize: "1.6rem",
   fontFamily: "$Poppins",
   fontWeight: "bold",
-  color: "$lightBlack",
-  textShadow: "3px 3px 3px #a7a7a7",
+  height: "60px",
+  width: "80%",
+  border: "none",
+  borderRadius: "10px",
+  backgroundColor: "$blue400",
+  color: "#fff",
+  boxShadow: "5px 5px 5px #584dff",
 });

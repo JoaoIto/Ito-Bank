@@ -1,34 +1,34 @@
-import { fontWeight } from "@mui/system";
+import React, { useEffect, useRef } from "react";
 import { styled } from "../../../stitches.config";
+import { useField } from "@unform/core";
+import { fontSize } from "@mui/system";
 
-export function Input(props)  {
+export function InputField( { name, ...rest }) {
+  const inputRef = useRef(null);
+  const { fieldName, defaultValue, registerField, error } = useField(name);
 
-    const typing = (event) => {
-      props.onChanges(event.target.value);
-    };
+  useEffect(() => {
+    registerField({
+      name: fieldName,
+      ref: inputRef.current,
+      path: 'value'  
+    });
+  }, [fieldName, registerField]);
 
   return (
     <>
-      <Label>{props.label}</Label>
-      <InputLabel
-        value={props.value}
-        onChange={typing}
-        required={props.required}
-        type={props.type}
-        placeholder={props.placeholder}
-      ></InputLabel>
+      <Input  ref={inputRef} defaultValue={defaultValue} {...rest}></Input>
     </>
   );
 }
 
-const Label = styled('label', {
-    fontSize: '2rem', 
-    fontFamily: '$Inter',
-    fontWeight: 'bold',
-})
-
-const InputLabel = styled("input", {
-  height: '30px',
-  width: '80%',
+const Input = styled('input', {
+  height: '40px',
+  width: '100%',
   padding: '10px',
+  border: '3px solid #cacaca',
+  borderRadius: '10px',
+  margin: '10px',
+  fontSize: '1.3rem',
+  textAlign: 'center',
 });
