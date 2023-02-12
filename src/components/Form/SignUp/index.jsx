@@ -19,7 +19,7 @@ export function SignUp() {
           <img height="90" src="../../../../src/assets/imgs/login.svg" />
         </Title>
         <InputField
-          label="Digite seu nome  completo: "
+          label="Nome Completo: "
           name="name"
           type="text"
           placeholder="Digite seu nome aqui"
@@ -27,7 +27,7 @@ export function SignUp() {
         />
 
         <InputField
-          label="Digite seu CPF: "
+          label="CPF: "
           name="CPF"
           type="number"
           placeholder="000.000.000-00"
@@ -35,14 +35,14 @@ export function SignUp() {
         />
 
         <InputField
-          label="Digite sua data de nascimento: "
+          label="Data de nascimento: "
           name="date"
           type="date"
           required
         />
 
         <InputField
-          label="Digite seu melhor email aqui: "
+          label="Email: "
           name="email"
           type="email"
           placeholder="emailExample@email.com"
@@ -50,7 +50,7 @@ export function SignUp() {
         />
 
         <InputField
-          label="Crie uma senha para sua conta:"
+          label="Senha: "
           name="password"
           type="password"
           placeholder="**************"
