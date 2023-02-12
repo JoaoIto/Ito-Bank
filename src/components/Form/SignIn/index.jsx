@@ -14,7 +14,7 @@ export function SignIn() {
   return (
     <Card>
       <Form className={styles.form} onSubmit={handleSubmit}>
-        <Title>Formulário de Login</Title>
+        <Title>Formulário de Login <img height="90" src="../../../../src/assets/imgs/signIn.svg"/> </Title>
         <InputField
           label="Email: "
           name="email"

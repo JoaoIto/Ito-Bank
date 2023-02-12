@@ -2,17 +2,20 @@ import React from "react";
 import { styled } from "../../../stitches.config";
 
 export function Footer() {
-    return(
-        <Card>
-            <Title>Ito Bank</Title>
-        </Card>
-    )
+    return (
+      <Card>
+        <Title>Ito Bank</Title>
+        <img height="280" src="../../../src/assets/imgs/form.svg" />
+        <img height="280" src="../../../src/assets/imgs/ideia.svg" />
+      </Card>
+    );
 }
 
 const Card = styled('footer', {
     height: '90vh',
     width: '100%',
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-evenly',
     backgroundColor: '$blue400',

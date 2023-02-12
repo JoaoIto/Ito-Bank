@@ -14,7 +14,10 @@ export function SignUp() {
   return (
     <Card>
       <Form className={styles.form} onSubmit={handleSubmit}>
-        <Title>Formulário de Cadastro</Title>
+        <Title>
+          Cadastro{" "}
+          <img height="90" src="../../../../src/assets/imgs/login.svg" />
+        </Title>
         <InputField
           label="Digite seu nome  completo: "
           name="name"
