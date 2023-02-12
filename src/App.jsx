@@ -1,13 +1,13 @@
 import { Header } from "./components/Header";
 import { About } from "./components/About";
-import { SignIn } from "./components/Form/SignIn";
+import { Form   } from "./components/Form";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <About />
-      <SignIn />
+      <Form />
     </div>
   );
 }
