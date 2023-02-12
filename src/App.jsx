@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import { About } from "./components/About";
-import { Form   } from "./components/Form";
+import { Form } from "./components/Form";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <About />
       <Form />
+      <Footer />
     </div>
   );
 }
