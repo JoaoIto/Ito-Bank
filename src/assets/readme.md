@@ -1,0 +1,3 @@
+# Assets 
+
+A pasta onde ficam os arquivos a serem encontrados de imagem, na qual usei a biblioteca web de imagens personalizáveis ***[unDraw](https://undraw.co/)***, e ainda toda e qualquer imagem ou icon usada no projeto, além de todos os arquivos de código style, também contrados aqui na pasta de  `styles`, já que a maioria de todos os estilos no site foram feitas com *CSS in JS* nas próprias pastas do projeto, com ***[stitches](https://stitches.dev/docs/installation)***

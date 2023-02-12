@@ -15,6 +15,7 @@ export const {
     colors: {
       gray400: "gainsboro",
       gray500: "lightgray",
+      shadowLightGrey: "#cacaca",
       lightGrey: "#E9E8E8",
       darkGrey: "#434242",
       lightBlack: "#20262E",
