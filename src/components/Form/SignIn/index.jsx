@@ -5,6 +5,7 @@ import { InputField } from "../input";
 import styles from "../index.module.css"
 
 export function SignIn() {
+
   function handleSubmit(data) { 
     console.log(data);
     // { email: 'test@example.com', password: '123456' }
@@ -16,7 +17,6 @@ export function SignIn() {
         <Title>Formulário de Login</Title>
         <InputField
           label="Email: "
-          for="email"
           name="email"
           type="email"
           placeholder="emailExample@email.com"
@@ -30,20 +30,22 @@ export function SignIn() {
           required
         />
 
-        <Submit type="submit">Sign in</Submit>
+        <Submit type="submit">Entrar</Submit>
       </Form>
     </Card>
   );
 }
 
-const Card = styled('section', {
-  width: '100%',
-  height: '90vh',
-  display: 'flex',
-  alignSelf: 'center',
-  alignItems: 'center',
-  justifyContent: 'space-evenly',
-  backgroundColor: '$aquaWhite',
+const Card = styled("section", {
+  width: "100%",
+  height: "70vh",
+  display: "flex",
+  alignSelf: "center",
+  alignItems: "center",
+  justifyContent: "space-evenly",
+  backgroundColor: "$aquaWhite",
+  boxShadow: "8px 8px 8px #cacaca",
+  marginBottom: "50px",
 });
 
 const Title = styled("h2", {
@@ -52,6 +54,7 @@ const Title = styled("h2", {
   fontWeight: "bold",
   textShadow: "2px 2px 2px #584dff",
 });
+
 const Submit = styled("button", {
   fontSize: "1.6rem",
   fontFamily: "$Poppins",
