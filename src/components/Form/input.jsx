@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import { styled } from "../../../../stitches.config";
+import { styled } from "../../../stitches.config";
 import { useField } from "@unform/core";
-import { fontSize } from "@mui/system";
 
 export function InputField({ name, label,...rest }) {
   const inputRef = useRef(null);

@@ -1,7 +1,8 @@
 import React from "react";
 import { styled } from "../../../../stitches.config";
 import { Form } from "@unform/web";
-import { InputField } from "./input";
+import { InputField } from "../input";
+import styles from "../index.module.css"
 
 export function SignIn() {
   function handleSubmit(data) { 
@@ -11,10 +12,11 @@ export function SignIn() {
 
   return (
     <Card>
-      <Form id="form" onSubmit={handleSubmit}>
+      <Form className={styles.form} onSubmit={handleSubmit}>
         <Title>Formulário de Login</Title>
         <InputField
           label="Email: "
+          for="email"
           name="email"
           type="email"
           placeholder="emailExample@email.com"
