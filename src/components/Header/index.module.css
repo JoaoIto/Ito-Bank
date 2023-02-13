@@ -1,0 +1,10 @@
+@media(width < 900px){
+
+    header{
+        text-align: center;
+    }
+    
+    img{
+        display: none;
+    }
+}

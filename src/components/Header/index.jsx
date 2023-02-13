@@ -1,4 +1,5 @@
 import { styled } from "../../../stitches.config";
+import style from "./index.module.css"
 
 export function Header() {
   return (

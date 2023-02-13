@@ -5,8 +5,16 @@ export function Footer() {
     return (
       <Card>
         <Title>Ito Bank</Title>
-        <img height="280" src="../../../src/assets/imgs/form.svg" />
-        <img height="280" src="../../../src/assets/imgs/ideia.svg" />
+        <img
+          className="img"
+          height="280"
+          src="../../../src/assets/imgs/form.svg"
+        />
+        <img
+          className="img"
+          height="280"
+          src="../../../src/assets/imgs/ideia.svg"
+        />
       </Card>
     );
 }
