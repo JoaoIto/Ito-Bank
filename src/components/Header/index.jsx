@@ -6,30 +6,35 @@ export function Header() {
     <Background>
       <Nav>
         <MenuHam>
-          <img src="../../../src/assets/icons/menu.svg" alt="" />
+          <img
+            src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/icons/menu.svg"
+            alt=""
+          />
         </MenuHam>
         <img
           height="120"
-          src="../../../src/assets/imgs/bankPeople.svg"
+          src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/imgs/bankPeople.svg"
           alt=""
         />
         <Texts>
           <Title>Ito Bank</Title>
           <Desc>O banco para você enriquecer!</Desc>
-        </Texts> 
+        </Texts>
       </Nav>
       <Cover>
-        <img width="40%" height="500" src="../../../src/assets/imgs/home.svg" alt="" />
+        <img
+          width="40%"
+          height="500"
+          src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/imgs/home.svg"
+          alt=""
+        />
         <Flan>
-            <Legend>
-                Nós somos a solução...
-            </Legend>
-            <Span>
-                Para você que pretende sair do zero para o milhão, venha com a gente!
-            </Span>
-            <Invest>
-                Investir Agora!
-            </Invest>
+          <Legend>Nós somos a solução...</Legend>
+          <Span>
+            Para você que pretende sair do zero para o milhão, venha com a
+            gente!
+          </Span>
+          <Invest>Investir Agora!</Invest>
         </Flan>
       </Cover>
     </Background>

@@ -16,7 +16,10 @@ export function SignUp() {
       <Form className={styles.form} onSubmit={handleSubmit}>
         <Title>
           Cadastro{" "}
-          <img height="90" src="../../../../src/assets/imgs/login.svg" />
+          <img
+            height="90"
+            src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/imgs/login.svg"
+          />
         </Title>
         <InputField
           label="Nome Completo: "
