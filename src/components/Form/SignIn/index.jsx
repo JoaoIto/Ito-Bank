@@ -14,7 +14,13 @@ export function SignIn() {
   return (
     <Card>
       <Form className={styles.form} onSubmit={handleSubmit}>
-        <Title>Formulário de Login <img height="90" src="../../../../src/assets/imgs/signIn.svg"/> </Title>
+        <Title>
+          Formulário de Login{" "}
+          <img
+            height="90"
+            src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/imgs/signIn.svg"
+          />{" "}
+        </Title>
         <InputField
           label="Email: "
           name="email"

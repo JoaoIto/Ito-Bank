@@ -13,7 +13,7 @@ export function About(){
         <img
           width="50%"
           height="600"
-          src="../../../src/assets/imgs/aboutReact.svg"
+          src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/imgs/aboutReact.svg"
           alt=""
         />
       </Background>

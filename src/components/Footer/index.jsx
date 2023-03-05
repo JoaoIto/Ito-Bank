@@ -8,12 +8,12 @@ export function Footer() {
         <img
           className="img"
           height="280"
-          src="../../../src/assets/imgs/form.svg"
+          src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/imgs/form.svg"
         />
         <img
           className="img"
           height="280"
-          src="../../../src/assets/imgs/ideia.svg"
+          src="https://raw.githubusercontent.com/JoaoIto/Ito-Bank/e35fb82d6214849f325c10d5660c59f83819dd17/src/assets/imgs/ideia.svg"
         />
       </Card>
     );
